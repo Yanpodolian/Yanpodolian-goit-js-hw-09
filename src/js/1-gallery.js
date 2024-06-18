@@ -7,7 +7,7 @@ import "simplelightbox/dist/simple-lightbox.min.css";
 
 
 
-
+document.addEventListener('DOMContentLoaded', () => {
 const images = [
       {
         preview:
@@ -75,7 +75,7 @@ const images = [
     ];
     
 
-    document.addEventListener('DOMContentLoaded', () => {
+    
         const gallery = document.querySelector('.gallery');
       
      
@@ -100,7 +100,7 @@ const images = [
         });
       
         gallery.append(...galleryItems);
-      
+    //   console.log(galleryItems)
     
         gallery.addEventListener('click', (event) => {
           event.preventDefault();
